@@ -1,2 +1,16 @@
-# ui_projects
-Projects based on HTML5, CSS3, SCSS and its framework
+# UI Projects Collection
+A collection of user interfaces for various applications and platforms.
+
+## Projects
+
+## Getting Started
+
+## Contributing
+
+## Versioning
+
+## Authors
+
+## License
+
+## Acknowledgements
