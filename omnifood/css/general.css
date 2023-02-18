@@ -15,6 +15,7 @@ Default: 1
 Small:  1.05
 Medium: 1.2
 Paragraph-default: 1.6
+Large: 1.8
 
 - Letter Spacing 
 -0.5px
@@ -73,6 +74,10 @@ html {
 	/* font-size: 10px; so, 10px / 16px = 0.625 = 62.5% */
 	/* percentage of user's browser font-size setting */
 	font-size: 62.5%;
+	overflow-x: hidden;
+
+	/* Does NOT work on Safari */
+	/* scroll-behavior: smooth; */
 }
 
 body {
@@ -80,6 +85,9 @@ body {
 	line-height: 1;
 	font-weight: 400;
 	color: #555;
+
+	/* Only works if there is nothing absolutely positioned in relation to body  */
+	overflow-x: hidden;
 }
 
 /* ******************** */
@@ -166,6 +174,7 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 1.6rem;
+	line-height: 1.2;
 }
 
 .list-icon {
