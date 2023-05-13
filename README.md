@@ -3,6 +3,7 @@ A collection of user interfaces for various applications and platforms.
 
 ## Projects
 1. [Omnifood](https://omnifood-latestproject.netlify.app/)
+2. [Portfolio](https://github.com/codemonkey-sagar/ui_projects/tree/main/portfolio)
 
 
 ## Getting Started
