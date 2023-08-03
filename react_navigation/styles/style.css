@@ -2,14 +2,27 @@
 .announcementBar {
   display: flex;
   align-items: center;
+  font-size: 85%;
+  padding: 0.5rem 0;
+  background-color: #e4e0f0;
 }
 
 .announcementBar__content {
-  flex: 1;
+  flex: 1 1 auto;
   text-align: center;
 }
 
 .announcementBar--close {
+  border: none;
+  opacity: 0.5;
   flex-basis: 5rem;
+  background-color: transparent;
 }
 
+.announcementBar--close:hover {
+  opacity: 0.7;
+}
+
+.announcementBar--close:focus-visible {
+  outline: none;
+}
