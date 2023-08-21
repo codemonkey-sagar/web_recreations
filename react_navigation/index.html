@@ -9,25 +9,77 @@
   <!-- link to css -->
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/general.css">
 </head>
 
 <body>
   <div class="announcementBar">
     <div class="announcementBar__content">
       Support Ukrine 🇺🇦 
-      <a href="#">
+      <a href="https://www.facebook.com/fundraisers/explore/search/charities/?query=ukraine">
         Help Provide Humanitarian Aid to Ukrine
       </a>
     </div>
     <button class="announcementBar--close">
-      <svg viewBox="0 0 15 15" width="14" height="14">
+      <svg viewBox="0 0 15 15">
         <g stroke="currentColor" stroke-width="3.1">
           <path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path>
         </g>
       </svg>
     </button>
   </div>
-  <nav>Navbar</nav>
+  <nav>
+    <div class="navbar__inner">
+      <div class="navbar__items">
+        <a href="/" class="navbar__brand">
+          <div class="navbar__logo">
+            <img src="images/spiro.svg" alt="React Navigation Logo">
+          </div>
+          <div class="navbar__title">React Navigation</div>
+        </a>
+        <a href="https://reactnavigation.org/docs/getting-started" class="navbar__item">Docs</a>
+        <a href="https://reactnavigation.org/blog" class="navbar__item">Blog</a>
+        <a href="https://reactnavigation.org/help" class="navbar__item">Help</a>
+        <div class="navbar__item dropdown dropdown--hoverable">
+          <a href="https://reactnavigation.org/docs/7.x/getting-started">
+            7.x
+          </a>
+          <ul class="dropdown__menu">
+            <li>
+              <a href="https://reactnavigation.org/docs/7.x/getting-started/" class="dropdown__link">7.x</a>
+            </li>
+            <li>
+              <a href="https://reactnavigation.org/docs/getting-started" class="dropdown__link">6.x</a>
+            </li>
+            <li>
+              <a href="https://reactnavigation.org/docs/5.x/getting-started" class="dropdown__link">5.x</a>
+            </li>
+            <li>
+              <a href="https://reactnavigation.org/docs/5.x/getting-started" class="dropdown__link">4.x</a>
+            </li>
+            <li>
+              <a href="https://reactnavigation.org/docs/5.x/getting-started" class="dropdown__link">3.x</a>
+            </li>
+            <li>
+              <a href="https://reactnavigation.org/docs/5.x/getting-started" class="dropdown__link">2.x</a>
+            </li>
+            <li>
+              <a href="https://reactnavigation.org/docs/5.x/getting-started" class="dropdown__link">1.x</a>
+            </li>
+            <li>
+              <a href="https://reactnavigation.org/versions" class="dropdown__link">All versions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar__items navbar__items--right">
+        Navbar on right side
+      </div>
+    </div>
+  </nav>
+
+  <!-- link to js  -->
+  <script src="script.js"></script>
 </body>
 
 </html>
