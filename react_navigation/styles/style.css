@@ -12,6 +12,15 @@
   text-align: center;
 }
 
+.announcementBar__content a {
+  color: var(--black-color);
+  text-decoration: underline;
+}
+
+.announcementBar__content a:active {
+  color: inherit;
+}
+
 .announcementBar--close {
   border: none;
   opacity: 0.5;
@@ -37,4 +46,144 @@
 .announcementBar--close:focus-visible {
   outline: none;
   color: var(--black-color);
+}
+
+
+/* Navbar  */
+nav {
+  padding: 0.8rem 1.6rem;
+  height: 6rem;
+  line-height: 2.7rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.navbar__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.navbar__items {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__item {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  font-weight: var(--semi-bold);
+  color: var(--black-color);
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  margin-right: 1.6rem;
+  color: var(--black-color);
+}
+
+.navbar__brand:hover {
+  color: var(--primary-color);
+}
+
+.navbar__logo {
+  height: 3.2rem;
+  margin-right: 0.8rem;
+}
+
+.navbar__logo img {
+  height: 100%;
+}
+
+.navbar__title {
+  font-weight: 600;
+  padding-top: 2px;
+}
+
+.navbar__items .dropdown {
+  position: relative;
+}
+
+.dropdown .navbar__item::after {
+  content: "";
+  border-width: 0.6rem 0.6rem 0;
+  border-style: solid;
+  margin-left: 0.5rem;
+  border-color: var(--black-color) transparent;
+  position: relative;
+  top: 1.2rem;
+}
+
+
+.dropdown__menu {
+  display: none;
+}
+
+.navbar__items--right > a{
+  padding: 0.4rem 1.2rem;
+}
+
+.mode {
+  display: flex;
+  align-items: center;
+}
+
+.mode button {
+  border: none;
+  background-color: transparent;
+}
+
+.searchBox {
+  height: 3.6rem;
+  padding-left: 1.2rem;
+}
+
+.searchBox button {
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  height: inherit;
+  padding: 0 0.8rem;
+  border-radius: 1.6rem;
+  background-color: #ebedf0;
+}
+
+.searchBox button:hover{
+  background-color: #fff;
+  outline: none;
+  box-shadow: inset 0 0 0 2px var(--primary-color);
+}
+
+.searchBox button:hover .text {
+  color: var(--black-color);
+}
+
+.searchBox .text {
+  font-size: 1.6rem;
+  color: var(--dark-white);
+  padding: 0 1.2rem 0 .6rem;
+}
+
+.searchBox button path {
+  stroke-width: 1.6;
+}
+
+.searchBox span {
+  user-select: none;
+}
+
+.searchKey {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.searchKey kbd {
+  width: 2rem;
+  height: 1.8rem;
+  position: relative;
+  top: -1px;
+  border-radius: 3px;
+  color: var(--dark-white);
+  box-shadow:  inset 0 -2px 0 0 #cdcde6,inset 0 0 1px 1px #fff,0 1px 2px 1px rgba(30,35,90,.4);
 }
